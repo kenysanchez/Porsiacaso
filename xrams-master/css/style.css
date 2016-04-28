@@ -1201,11 +1201,13 @@ label::before {
 }
 #expand {
   height: 0px;
-  overflow: hidden;
-  color: #FFF;
+  overflow:hidden;
+  color: #fff;
+  opacity:0;
 }
 #toggle:checked ~ #expand {
   height: 2300px;
+  opacity:100;
 }
 #toggle:checked ~ label::before {
   content: "-";
